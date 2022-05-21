@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+#main {
+    display: flex;
+    flex: 1;
+}
+
+#main>article {
+    flex: 1;
+    order: 1;
+    font-size: x-large;
+}
+
+#main>nav,
+#main>aside {
+    flex: 0 0 20vw;
+    font-size: x-large;
+}
+
+#main>nav {
+    background: #D7E8D4;
+    order: 3;
+    font-size: x-large;
+}
+
+#main>aside {
+    background: beige;
+    order: 2;
+    font-size: x-large;
+}
+
+header,
+footer {
+    background: yellowgreen;
+    height: 20vh;
+    font-size: 50px
+}
+
+header:hover,
+footer:hover,
+article:hover,
+nav:hover,
+aside:hover {
+    padding: 1em;
+    color: red;
+    position: relative;
+}
